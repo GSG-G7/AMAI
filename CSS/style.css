@@ -3,10 +3,10 @@
 }
 .team h4 {
   padding-top: 10px;
-  color: #ecac73;
+  color: #454548
 }
 .team p {
-  color: #ecac73;
+  color: #454548;
   padding-bottom: 20px;
 }
 .team__title {
@@ -35,12 +35,12 @@
   margin-top: 10px;
 }
 .social {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .social i{
   width: 40px;
   height: 40px;
-  border: 2px solid #e67e22;
+  border: 2px solid #454548;
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
@@ -151,8 +151,7 @@ textarea{
     border-radius: 7px;
     padding: .8rem;
     box-sizing: border-box;
-
-    background: #384f66;
+    background: #202021;
     color: white;
     font-weight: bold;
     font-size: .8rem;
@@ -216,7 +215,7 @@ nav {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c3e50;
+    background-color: #202021;
     height: 10vh;
     padding: 2px 70px;
 }
@@ -233,19 +232,29 @@ nav {
     color: #fff;
     text-transform: uppercase;
 }
+.list-main a:hover, .list-main a:active {
+  cursor: pointer;
+}
 
 
 /* Home Style ===================================================>*/
 
 .home {
     text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/header);
+    background-size: cover;
+    background-position: center;
     
 }
 
 .home__title h1 {
     margin-top: 50px;
     font-size: 4rem;
-    text-shadow: 2px 2px #e67e22;
+    text-shadow: 3px 3px #e67e22;
+    color : white;
+}
+.home__title p {
+  color: white;
 }
 
 .home__btn {
@@ -258,9 +267,9 @@ nav {
     font-size: 1rem;
     font-weight: 500;
     border-radius: 10px;    
-    background-color: #384f66;  
-    color: #fff;
-    border: 2px solid #2c3e50;
+    background-color: #ffffff7e;  
+    color: #ffffff;
+    border: 2px solid #e67e22;
 }
 
 .home__btn button:first-child {
@@ -282,26 +291,38 @@ nav {
 .about__content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-align: justify;
-    
+    align-items: center; 
+}
+.about__content img {
+  width:50vh;
+  height: 50vh;
+  padding: 5px;
+  border: 2px solid black;
+  margin-bottom :20px;
 }
 .about__header h4{
-    margin-top: -2rem ;
     margin-right: 2rem;
     padding: 2rem;
 }
+.content__info {
+  width: 500px;
+}
+.content__info p {
+  text-align: justify;
+  font-size: 16px;
+}
 .content__info h3{
-    /* padding-top:1rem; */
-    margin-bottom: 3rem;
+    margin-bottom: 20px;
     font-size: 2.7rem;
     font-family: sans-serif;
 }
 
+
 .container-about{
-    margin: 3.7rem auto;
+    margin: 45px auto;
     width: 80vw;
     background:#f2f2f2;
-    border-radius: .5rem;
-    padding: 8rem;
-}
+    border-radius: .5rem; 
+    height:85%;
+    padding:4%;
+   }
