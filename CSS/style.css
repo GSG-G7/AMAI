@@ -69,7 +69,7 @@ html {
 }
 
 main {
-    max-width: 90%;
+    /* max-width: 90%; */
     margin: 0 auto;
 }
 
@@ -175,4 +175,36 @@ nav {
 /* Belong to JS ===================================================>*/
 .hide {
     display: none;
+}
+/* start Styling about --mohammad al hallaq */
+.about{
+    font-family: sans-serif;
+    font-weight: bold;
+    /* margin-left: 2rem; */
+}
+.about__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    
+}
+.about__header h4{
+    margin-top: -2rem ;
+    margin-right: 2rem;
+    padding: 2rem;
+}
+.content__info h3{
+    /* padding-top:1rem; */
+    margin-bottom: 3rem;
+    font-size: 2.7rem;
+    font-family: sans-serif;
+}
+
+.container-about{
+    margin: 3.7rem auto;
+    width: 80vw;
+    background:#f2f2f2;
+    border-radius: .5rem;
+    padding: 8rem;
 }
