@@ -35,7 +35,7 @@
   margin-top: 10px;
 }
 .social {
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 .social i{
   width: 40px;
@@ -294,8 +294,8 @@ nav {
     align-items: center; 
 }
 .about__content img {
-  width:50vh;
-  height: 50vh;
+  width: 34vh;
+  height: 31vh;
   padding: 5px;
   border: 2px solid black;
   margin-bottom :20px;
@@ -326,3 +326,112 @@ nav {
     height:85%;
     padding:4%;
    }
+
+   @media (max-width :425px) {
+ 
+    .about__content {
+      width:100%
+    }
+    .about__content img {
+      display: none;
+    }
+    .social {
+      padding-top: 0;
+    }
+   
+    .team__members {
+      flex-wrap: wrap;
+    }
+   
+    .member {
+      width: 220px;
+      height: 250px;
+      margin-bottom: 10px;
+    }
+   
+    .member-img img {
+      width: 15vh;
+      height: 15vh;
+    }
+   
+    .social i {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #e67e22;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 560px) {
+   
+    .home__title h1{
+      font-size: 2rem;
+    }
+    .home__title p{
+      font-size: .9rem;
+    }
+    nav {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2c3e50;
+      height: 25vh;
+      padding: 2px 70px;
+    }
+    .lis.about__content {
+    width:100%
+  }
+  .about__content img {
+    display: none;
+  }-main{
+      fl.about__content {
+    width:100%
+  }
+  .about__content img {
+    display: none;
+  }x-direction: column;
+   .abou.about__content {
+    width:100%
+  }
+  .about__content img {
+    display: none;
+  }__content {
+    widt.about__content {
+    width:100%
+  }
+  .about__content img {
+    display: none;
+  }:100%
+  }
+  .about__content img {
+    display: none;
+  }
+   .about__content {
+    width:100%
+  }
+  .about__content img {
+    display: none;
+  }main li {
+   .about__content {
+    width:100%
+  }
+  .about__content img {
+    display: none;
+  }in-left: 0;
+   .about__content {
+    width:100%
+  }
+  .about__content img {
+    display: none;
+  }-align: center;
+  }.about__content {
+    width:100%
+  }
+  .about__content img {
+    display: none;
+  }
+  
+}
