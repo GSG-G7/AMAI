@@ -24,44 +24,44 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-
     </header>
-
-
     <main>
         <section class="home">
             <div class="home__title">
                 <h1>Welcome to <span>AMAI</span> </h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis neque expedita fuga facilis. Quas non
-                    inventore cum mollitia recusandae officia autem consectetur error, eum, tenetur amet tempore temporibus
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis neque expedita fuga facilis. Quas
+                    non
+                    inventore cum mollitia recusandae officia autem consectetur error, eum, tenetur amet tempore
+                    temporibus
                     commodi fuga.</p>
             </div>
-    
+
             <div class="home__btn">
                 <button class="home__btn__tour">Take a Free tour</button>
                 <button class="home__btn__call">Call Us</button>
             </div>
-    
+
         </section>
         <section id="about" class="hide about">
             <h2>About Us</h2>
             <div class="about__content">
-                <img src="#" alt="Our Logo Team" >
+                <img src="#" alt="Our Logo Team">
                 <div class="content__info">
                     <h3>About Amai team</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aliquam illo cum. Vel, eum adipisci porro delectus quae fugit tenetur distinctio in, quaerat consequatur beatae! Ipsum odit labore repellendus? Maiores.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aliquam illo cum. Vel, eum
+                        adipisci porro delectus quae fugit tenetur distinctio in, quaerat consequatur beatae! Ipsum odit
+                        labore repellendus? Maiores.</p>
                 </div>
             </div>
         </section>
-    
+
         <section id='team' class="hide">
             <div>
                 <h2 style="font-family: literata">Our Team</h2>
                 <p>Know more about our developers!</p>
             </div>
-    
             <div id="members">
-    
+
                 <div id="member" class="member">
                     <div><img alt="member-pic" src=""></div>
                     <h3 id="name">Alaa Taima</h3>
@@ -72,7 +72,7 @@
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-    
+
                 <div id="member" class="member">
                     <div><img alt="member-pic" src=""></div>
                     <h3 id="name">Asem Abu-Msameh</h3>
@@ -83,7 +83,7 @@
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-    
+
                 <div id="member" class="member">
                     <div><img alt="member-pic" src=""></div>
                     <h3 id="name">Mohammed Al-Halaq</h3>
@@ -94,7 +94,7 @@
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-    
+
                 <div id="member" class="member">
                     <div><img alt="member-pic" src=""></div>
                     <h3 id="name">Imad Shatali</h3>
@@ -106,28 +106,33 @@
                     </div>
                 </div>
             </div>
-    
+            </div>
+
         </section>
-    
-        <section id="Contact-Us" class="hide">
+        <section id="Contact-Us" class="contact-us">
             <form action="" method="POST">
                 <fieldset>
                     <legend>Contact Us</legend>
-                    <label>Name<input type="text" name="name"></label>
-                    <label>Email<input type="email"name="email"></label>
-                    <label>Phone Number<input type="number" name="phoneNp"></label>
-                   <textarea name="message" id="" cols="30" rows="8" placeholder="Write your message here:"></textarea>
-                    <label>Developers you want to hire?<select>
-                            <option value="All">All</option>
-                            <option value="Asem">Asem AbuMsame7</option>
-                            <option value="Alaa">Alaa Taima</option>
-                            <option value="Mohammed">Mohammed Al-halaq</option>
-                            <option value="Imad">Imad Shatali</option>
-    
-                        </select></label>
-                    <input type="submit">
+                    <div class="forms-flex">
+                        <label>Name<input type="text" name="name" placeholder="name"></label>
+                        <label>Email<input type="email" name="email" placeholder="Email"></label>
+                        <label>Phone<input type="text" name="phoneNp" placeholder="Phone number"></label>
+                        <label>
+                            <select class="contact-us__select">
+                                <option value="" disabled selected>Select the developers</option>
+                                <option value="All">All</option>
+                                <option value="Asem">Asem AbuMsame7</option>
+                                <option value="Alaa">Alaa Taima</option>
+                                <option value="Mohammed">Mohammed Al-halaq</option>
+                                <option value="Imad">Imad Shatali</option>
+                            </select>
+                            <br>
+                        </label>
+                        <textarea name="message" id="" cols="30" rows="8"
+                            placeholder="Write your message here:"></textarea>
+                        <br><input class="contact-us--btn" type="submit">
                 </fieldset>
-    
+                </div>
             </form>
         </section>
     </main>

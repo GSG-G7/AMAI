@@ -1,9 +1,67 @@
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Literata', serif;
+    font-family: 'Oswald', sans-serif;
+
+}
+/* text inputs */
+.main section{
+    display: none
+}
+section#Contact-Us{
+    display: block;
+
+    font-size: 1.2rem;
 }
 
+#Contact-Us label input{
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 3px;
+    margin-left: 1vw;
+    width: 68.5vw;
+}
+section form{
+    margin: 0 auto;
+}
+textarea{
+    width:73vw;
+    padding: 0.4rem;
+    background: #F2F2E2;
+    margin-top: 1rem;
+}
+.forms-flex{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 4vw;
+}
+.contact-us__select{
+    padding: 0.5rem;
+    background: rgba(0,0,0,.2);
+    width: 17vw;
+}
+.contact-us legend{
+    text-align: left;
+    margin-left: 0.9rem;
+}
+.contact-us--btn{
+    padding: .5rem;
+    width: 73vw;
+    border-radius: 7px;
+    padding: .8rem;
+    box-sizing: border-box;
+
+    background: #384f66;
+    color: white;
+    font-weight: bold;
+    font-size: .8rem;
+}
 /* Main Style ===================================================>*/
 
 html {
@@ -61,7 +119,6 @@ button {
 
 nav {
     display: flex;
-    /* max-width: 90%; */
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -117,6 +174,7 @@ nav {
 .home__btn button:first-child {
     margin-right: 30px;  
 }
+
 
 
 /* Belong to JS ===================================================>*/
