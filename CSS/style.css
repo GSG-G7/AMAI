@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+
+}
+.main section{
+    display: none
+}
+section#Contact-Us{
+    display: block
+}
+#Contact-Us label{
+
+}
+
+#Contact-Us label input{
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 3px;
+}
+section form{
+    text-align: center;
+    margin: 0 auto;
+}
+textarea{
+    width:73vw;
+    padding: 0.4rem;
+    background: #F2F2E2;
+}
+.forms-flex{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    
+}
+
+.contact-us__select{
+    padding: 0.5rem;
+    margin-top: 0.4rem;
+    background: rgba(0,0,0,.2);
+    border-radius: 3px;
+}
+.contact-us legend{
+    text-align: left;
+    margin-left: 0.9rem;
+}
+.contact-us--btn{
+    margin: .5rem;
+    padding: .5rem;
+    width: 73.1%;
+    border-radius: 3px;
+}
