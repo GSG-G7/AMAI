@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link href="https://fonts.googleapis.com/css?family=Literata|Oswald&display=swap" rel="stylesheet">
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span class="logo">AMAI</span>
+            <ul class="list-main">
+                <li><a id="home">Home</a></li>
+                <li><a id="about">About</a></li>
+                <li><a id="team">Team</a></li>
+                <li><a id="contact-us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home__title">
+                <h1>Welcome to <span>AMAI</span> </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis neque expedita fuga facilis. Quas
+                    non
+                    inventore cum mollitia recusandae officia autem consectetur error, eum, tenetur amet tempore
+                    temporibus
+                    commodi fuga.</p>
+            </div>
+
+            <div class="home__btn">
+                <button class="home__btn__call">Call Us</button>
+            </div>
+
+        </section>
+        <section id="about" class="about" hidden>
+            <h2>About Us</h2>
+            <div class="about__content">
+                <img src="#" alt="Our Logo Team">
+                <div class="content__info">
+                    <h3>About Amai team</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aliquam illo cum. Vel, eum
+                        adipisci porro delectus quae fugit tenetur distinctio in, quaerat consequatur beatae! Ipsum odit
+                        labore repellendus? Maiores.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class='team' hidden>
+            <div class="team__title">
+                <h2>Our Team</h2>
+                <p>Know more about our developers!</p>
+            </div>
+
+            <div class="team__members">
+
+                <div id="member" class="member">
+                    <div class="member-img"><img alt="member-pic" src="images/member1.jpg"></div>
+                    <h3 id="name">Alaa Taima</h3>
+                    <h4>Web Developer</h4>
+                    <div class="social">
+                        <a href="https://github.com/AlaaTaima"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codewars.com/users/AlaaTaima"><i class="fab fa-free-code-camp"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div id="member" class="member">
+                    <div class="member-img"><img alt="member-pic" src="images/member4.jpg"></div>
+                    <h3 id="name">Asem Abu-Msameh</h3>
+                    <h4>Web Designer</h4>
+                    <div class="social">
+                        <a href="https://github.com/asem1789"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codewars.com/users/asem1789"><i class="fab fa-free-code-camp"></i></a>
+                        <a href="https://www.codewars.com/users/asem1789"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div id="member" class="member">
+                    <div class="member-img"><img alt="member-pic" src="images/member2.jpg"></div>
+                    <h3 id="name">Mohammed Al-Halaq</h3>
+                    <h4>Web Developer</h4>
+                    <div class="social">
+                        <a href="https://github.com/MohammadAlhalaq"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codewars.com/users/MohammadAlhalaq"><i
+                                class="fab fa-free-code-camp"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamad-el-hallaq-148368111/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div id="member" class="member">
+                    <div class="member-img"><img alt="member-pic" src="images/member3.jpg"></div>
+                    <h3 id="name">Imad Shatali</h3>
+                    <h4>Web Developer</h4>
+                    <div class="social">
+                        <a href="https://github.com/Amoodaa"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codewars.com/amoodaa"><i class="fab fa-free-code-camp"></i></a>
+                        <a href="https://www.linkedin.com/in/imad-shatali-b69469158/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="Contact-Us" class="contact-us" hidden>
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <div class="forms-flex">
+                        <label>Name<input type="text" name="name" placeholder="name"></label>
+                        <label>Email<input type="email" name="email" placeholder="Email"></label>
+                        <label>Phone<input type="text" name="phoneNp" placeholder="Phone number"></label>
+                        <label>
+                            <select class="contact-us__select">
+                                <option value="" disabled selected>Select the developers</option>
+                                <option value="All">All</option>
+                                <option value="Asem">Asem AbuMsame7</option>
+                                <option value="Alaa">Alaa Taima</option>
+                                <option value="Mohammed">Mohammed Al-halaq</option>
+                                <option value="Imad">Imad Shatali</option>
+                            </select>
+                            <br>
+                        </label>
+                        <textarea name="message" id="" cols="30" rows="8"
+                            placeholder="Write your message here:"></textarea>
+                        <br><input class="contact-us--btn" type="submit">
+                </fieldset>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src='./JS/index.js'></script>
+</body>
+
+</html>
