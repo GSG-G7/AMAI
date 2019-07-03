@@ -2,53 +2,182 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 1.2rem;
+    
+}
+body{
+    font-family: 'Literata', serif;
+    font-family: 'Oswald', sans-serif;
 
 }
+/* text inputs */
 .main section{
     display: none
 }
 section#Contact-Us{
-    display: block
-}
-#Contact-Us label{
+    display: block;
 
+    font-size: 1.2rem;
 }
 
 #Contact-Us label input{
     margin: .5rem;
     padding: .5rem;
     border-radius: 3px;
+    margin-left: 1vw;
+    width: 68.5vw;
 }
 section form{
-    text-align: center;
     margin: 0 auto;
 }
 textarea{
     width:73vw;
     padding: 0.4rem;
     background: #F2F2E2;
+    margin-top: 1rem;
 }
 .forms-flex{
     display: flex;
-    justify-content: center;
-    margin: 2rem;
-    
+    justify-content: left;
+    flex-direction: column;
+    padding: 4vw;
 }
-
 .contact-us__select{
     padding: 0.5rem;
-    margin-top: 0.4rem;
     background: rgba(0,0,0,.2);
-    border-radius: 3px;
+    width: 17vw;
 }
 .contact-us legend{
     text-align: left;
     margin-left: 0.9rem;
 }
 .contact-us--btn{
-    margin: .5rem;
     padding: .5rem;
-    width: 73.1%;
-    border-radius: 3px;
+    width: 73vw;
+    border-radius: 7px;
+    padding: .8rem;
+    box-sizing: border-box;
+
+    background: #384f66;
+    color: white;
+    font-weight: bold;
+    font-size: .8rem;
+}
+/* Main Style ===================================================>*/
+
+html {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 27px 35px;
+    height: 90vh;
+    background-color: #d8e1e3;
+}
+
+/* Component Reusable ===================================================>*/
+
+h1,h2,h3{
+    font-family: 'Literata', serif;
+    font-weight: 400;
+}
+
+h1 {
+    word-spacing: 20px;
+}
+
+ul {
+    list-style: none;    
+}
+
+a {
+    text-decoration: none; 
+}
+
+/* Reset button */
+button {    
+    outline: none;
+}
+
+
+/* Header Style ===================================================>*/
+
+.logo {
+    font-size: 2rem;
+    font-family: 'Literata', serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-left: 20px;
+    color: #e67e22;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    height: 10vh;
+    padding: 2px 5px;
+}
+
+.list-main {
+    display: flex;
+    padding-right: 60px;
+
+}
+
+.list-main li {
+    margin-left: 30px;    
+}
+
+.list-main a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* Home Style ===================================================>*/
+
+.home {
+    text-align: center;
+    
+}
+
+.home__title h1 {
+    margin-top: 50px;
+    font-size: 4rem;
+    text-shadow: 2px 2px #e67e22;
+}
+
+.home__btn {
+    margin-top: 100px;
+}
+
+.home__btn button {
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;    
+    background-color: #384f66;  
+    color: #fff;
+    border: 2px solid #2c3e50;
+}
+
+.home__btn button:first-child {
+    margin-right: 30px;  
+}
+
+
+
+/* Belong to JS ===================================================>*/
+.hide {
+    display: none;
 }
