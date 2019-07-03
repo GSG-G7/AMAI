@@ -34,8 +34,8 @@
   border-bottom-left-radius: 70px;
 }
 .member-img img {
-  width: 40vh;
-  height: 40vh;
+  width: 30vh;
+  height: 30vh;
   border: 3px solid #384f66;
   padding: 5px;
   border-radius: 50%;
@@ -63,7 +63,7 @@
   }
   .member {
     width: 280px;
-    height: 287px;
+    height: 321px;
     margin-bottom: 10px;
   }
   .member-img img {
