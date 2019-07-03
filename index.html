@@ -18,15 +18,15 @@
         <nav>
             <span class="logo">AMAI</span>
             <ul class="list-main">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a id="home">Home</a></li>
+                <li><a id="about">About</a></li>
+                <li><a id="team">Team</a></li>
+                <li><a id="contact-us">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="home hide">
+        <section class="home">
             <div class="home__title ">
                 <h1>Welcome to <span>AMAI</span> </h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis neque expedita fuga facilis. Quas
@@ -37,12 +37,11 @@
             </div>
 
             <div class="home__btn">
-                <button class="home__btn__tour">Take a Free tour</button>
                 <button class="home__btn__call">Call Us</button>
             </div>
 
         </section>
-        <section id="about" class="about">
+        <section id="about" class="about" hidden> 
             <div class="container-about">
                 
                 <div class="about__content">
@@ -57,61 +56,65 @@
             </div>
         </section>
 
-        <section id='team' class="hide">
-            <div>
-                <h2 style="font-family: literata">Our Team</h2>
+
+        <section class='team' hidden>
+            <div class="team__title">
+                <h2>Our Team</h2>
                 <p>Know more about our developers!</p>
             </div>
-            <div id="members">
+
+            <div class="team__members">
 
                 <div id="member" class="member">
-                    <div><img alt="member-pic" src=""></div>
+                    <div class="member-img"><img alt="member-pic" src="images/member1.jpg"></div>
                     <h3 id="name">Alaa Taima</h3>
                     <h4>Web Developer</h4>
-                    <div id="social">
-                        <a href=""><i class="fab fa-github"></i></a>
-                        <a href=""><img src="./images/codewars.svg"></a>
+                    <div class="social">
+                        <a href="https://github.com/AlaaTaima"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codewars.com/users/AlaaTaima"><i class="fab fa-free-code-camp"></i></a>
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
                 <div id="member" class="member">
-                    <div><img alt="member-pic" src=""></div>
+                    <div class="member-img"><img alt="member-pic" src="images/member4.jpg"></div>
                     <h3 id="name">Asem Abu-Msameh</h3>
-                    <h4>Web Designer</h4>
-                    <div id="social">
-                        <a href=""><i class="fab fa-github"></i></a>
-                        <a href=""><img src="./images/codewars.svg"></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <h4>Programmer</h4>
+                    <div class="social">
+                        <a href="https://github.com/asem1789"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codewars.com/users/asem1789"><i class="fab fa-free-code-camp"></i></a>
+                        <a href="https://www.codewars.com/users/asem1789"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
                 <div id="member" class="member">
-                    <div><img alt="member-pic" src=""></div>
+                    <div class="member-img"><img alt="member-pic" src="images/member2.jpg"></div>
                     <h3 id="name">Mohammed Al-Halaq</h3>
                     <h4>Web Developer</h4>
-                    <div id="social">
-                        <a href=""><i class="fab fa-github"></i></a>
-                        <a href=""><img src="./images/codewars.svg"></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="social">
+                        <a href="https://github.com/MohammadAlhalaq"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codewars.com/users/MohammadAlhalaq"><i
+                                class="fab fa-free-code-camp"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamad-el-hallaq-148368111/"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
                 <div id="member" class="member">
-                    <div><img alt="member-pic" src=""></div>
+                    <div class="member-img"><img alt="member-pic" src="images/member3.jpg"></div>
                     <h3 id="name">Imad Shatali</h3>
                     <h4>Web Developer</h4>
-                    <div id="social">
-                        <a href=""><i class="fab fa-github"></i></a>
-                        <a href=""><img src="./images/codewars.svg"></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="social">
+                        <a href="https://github.com/Amoodaa"><i class="fab fa-github"></i></a>
+                        <a href="https://www.codewars.com/amoodaa"><i class="fab fa-free-code-camp"></i></a>
+                        <a href="https://www.linkedin.com/in/imad-shatali-b69469158/"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-            </div>
             </div>
 
         </section>
-        <section id="Contact-Us" class="contact-us hide">
+        <section id="Contact-Us" class="contact-us" hidden>
             <form action="" method="POST">
                 <fieldset>
                     <legend>Contact Us</legend>
@@ -138,7 +141,6 @@
             </form>
         </section>
     </main>
-
     <script src='./JS/index.js'></script>
 </body>
 
