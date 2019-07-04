@@ -1,3 +1,17 @@
+/* default style by mo*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  font-family: 'Literata', serif;
+  font-family: 'Oswald', sans-serif;
+  background: #d8e1e3;
+}
+
+/* start team styling  */
 .team h2, .team h3, .team h4{
   color: rgb(22, 22, 22);
 }
@@ -14,7 +28,6 @@
 }
 .team__members{
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-around;  
 }
@@ -34,9 +47,6 @@
   border-radius: 50%;
   margin-top: 10px;
 }
-.social {
-  /* padding-top: 40px; */
-}
 .social i{
   width: 40px;
   height: 40px;
@@ -47,68 +57,16 @@
   color: #384f66;
   font-size:20px;
 }
-@media (max-width :768px){
-  .team {
-    height: 832px;
-  }
-  .team__members{
-    flex-wrap: wrap;
-  }
-  .member {
-    width: 280px;
-    height: 321px;
-    margin-bottom: 10px;
-  }
-  .member-img img {
-    width: 20vh;
-    height: 20vh;
-  }
 
-}
-@media (max-width :425px){
-  .team {
-    height: 1088px;
-  }
-  .social {
-    padding-top: 0;
-  }
-  .team__members{
-    flex-wrap: wrap;
-  }
-  .member {
-    width: 220px;
-    height: 250px;
-    margin-bottom: 10px;
-  }
-  .member-img img {
-    width: 15vh;
-    height: 15vh;
-  }
-  .social i{
-    width: 20px;
-    height: 20px;
-    border: 2px solid #e67e22;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 20px;
-    color: white;
-    font-size:10px;
-  }
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
-body{
-    font-family: 'Literata', serif;
-    font-family: 'Oswald', sans-serif;
-
-}
 /* text inputs */
 .main section{
     display: none
+}
+.input-label{
+  display: block;
+  margin-left: 1.3rem;
+  font-family: sans-serif;
+  font-size: 1rem;
 }
 section#Contact-Us{
     font-size: 1.2rem;
@@ -116,10 +74,10 @@ section#Contact-Us{
 
 #Contact-Us label input{
     margin: .5rem;
-    padding: .5rem;
-    border-radius: 3px;
+    padding: 0.8rem;
+    border-radius: 7px;
     margin-left: 1vw;
-    width: 68.5vw;
+    width: 90vw;
 }
 section form{
     margin: 0 auto;
@@ -127,34 +85,58 @@ section form{
 textarea{
     width:73vw;
     padding: 0.4rem;
-    background: #F2F2E2;
     margin-top: 1rem;
+    margin: .5rem;
+    padding: 0.8rem;
+    border-radius: 7px;
+    margin-left: 1vw;
+    width: 90vw;
+    font-family: sans-serif;
 }
 .forms-flex{
     display: flex;
     justify-content: left;
     flex-direction: column;
-    padding: 4vw;
+    width:90vw;
+    padding: 0vw;
+}
+.coatainer-border{
+  width: 80vw;
+  overflow: hidden;
 }
 .contact-us__select{
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     background: rgba(0,0,0,.2);
-    width: 17vw;
+    /* width: 17vw; */
+    /* margin: .5rem; */
+    padding: 0.8rem;
+    border-radius: 7px;
+    margin-left: 1vw;
+    width: 90vw;
 }
 .contact-us legend{
     text-align: left;
     margin-left: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.7rem;
+}
+fieldset{
+  padding: 2vw;
+  width:90vw;
 }
 .contact-us--btn{
-    padding: .5rem;
-    width: 73vw;
-    border-radius: 7px;
-    padding: .8rem;
-    box-sizing: border-box;
-    background: #202021;
+    background: #202021ad;
     color: white;
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 1rem;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 7px;
+    margin-left: 1vw;
+    width: 90vw;
+}
+.contact-us--btn:hover{
+  background: #e67d2298;
 }
 /* Main Style ===================================================>*/
 
@@ -207,7 +189,13 @@ button {
     font-family: 'Literata', serif;
     font-weight: 600;
     letter-spacing: 5px;
-    color: #e67e22;
+    color: #eb8933;
+    transition: .5s;
+}
+.logo:hover{
+  color: #dfc5aea1;
+  transform: scale(.8) rotate(-5deg);
+  cursor: pointer;
 }
 
 nav {
@@ -225,15 +213,16 @@ nav {
 }
 
 .list-main li {
-    margin-left: 30px;    
-}
-
-.list-main a {
+    margin-left: 30px;
     color: #fff;
     text-transform: uppercase;
+    transition: .8s;
 }
-.list-main a:hover, .list-main a:active {
+
+.list-main li:hover, .list-main li:active {
+  transform: scale(1.5) rotate(2.5deg); 
   cursor: pointer;
+  color: #e9d6c6a1;
 }
 
 
@@ -253,6 +242,9 @@ nav {
     text-shadow: 3px 3px #e67e22;
     color : white;
 }
+.home__title h1:hover{
+  transform: scale(1.02) rotate(1deg);
+}
 .home__title p {
   color: white;
 }
@@ -265,56 +257,71 @@ nav {
     width: 9rem;
     height: 2.5rem;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
     border-radius: 10px;    
-    background-color: #ffffff7e;  
-    color: #ffffff;
+    background-color: #ffffff41;  
+    color: #f1d2b7;
     border: 2px solid #e67e22;
+    transition: 1s;
 }
-
-.home__btn button:first-child {
-    margin-right: 30px;  
+.home__btn button:hover {
+  transform: scale(1.2);
+  color:#ffffff;
+  background:rgba(199, 139, 111, 0.26);
 }
-
 
 
 /* Belong to JS ===================================================>*/
 .hide {
     display: none;
 }
-/* start Styling about --mohammad al hallaq */
+
+/* start Styling about --mohammad al hallaq and alaa */
 .about{
     font-family: sans-serif;
     font-weight: bold;
-    /* margin-left: 2rem; */
 }
 .about__content{
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: flex-start; 
 }
 .about__content img {
-  width: 34vh;
-  height: 31vh;
-  padding: 5px;
-  border: 2px solid black;
-  margin-bottom :20px;
+    width: 40%;
+    height: 32%;
+    padding: 5px;
+    border: 2px solid rgb(150, 135, 135);
+    margin-bottom :20px;
+    transform: rotate(-4deg);
+    transition: .6s;
+}
+.about__content img:hover{
+  transform: scale(1.05) rotate(.05deg)
 }
 .about__header h4{
     margin-right: 2rem;
     padding: 2rem;
 }
 .content__info {
-  width: 500px;
+  width: 95vh;
 }
 .content__info p {
-  text-align: justify;
-  font-size: 16px;
+  text-align: left;
+  font-size: 15px;
+  font-family: serif;
+  font-weight: normal;
+  margin-left: 3rem;
+  word-spacing: 0.8px;
 }
 .content__info h3{
     margin-bottom: 20px;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     font-family: sans-serif;
+    margin-left: 3rem;
+    
+}
+.content__info h3:hover{
+  transform: rotate(2deg);
 }
 
 
@@ -323,11 +330,39 @@ nav {
     width: 80vw;
     background:#f2f2f2;
     border-radius: .5rem; 
-    height:85%;
+    
     padding:4%;
    }
+   
+/* end about styling */
 
-   @media (max-width :425px) {
+@media (max-width :768px){
+  .team {
+    height: 832px;
+  }
+  .team__members{
+    flex-wrap: wrap;
+  }
+  .member {
+    width: 280px;
+    height: 321px;
+    margin-bottom: 10px;
+  }
+  .member-img img {
+    width: 20vh;
+    height: 20vh;
+  }
+  .content__info h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+   }
+   .contact-us--btn {
+     width: 88vw;
+   }
+}
+
+@media (max-width :425px) {
  
     .about__content {
       width:100%
@@ -342,7 +377,9 @@ nav {
     .team__members {
       flex-wrap: wrap;
     }
-   
+    section {
+      padding: 23px 14px;
+    }  
     .member {
       width: 220px;
       height: 250px;
@@ -353,85 +390,115 @@ nav {
       width: 15vh;
       height: 15vh;
     }
+   .content__info h3{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+   }
    
-    .social i {
-      width: 20px;
-      height: 20px;
-      border: 2px solid #e67e22;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 20px;
-      color: white;
-      font-size: 10px;
-    }
+  .social i {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 10px;
   }
-  @media only screen and (max-width: 560px) {
-   
-    .home__title h1{
-      font-size: 2rem;
-    }
-    .home__title p{
-      font-size: .9rem;
-    }
-    nav {
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #2c3e50;
-      height: 25vh;
-      padding: 2px 70px;
-    }
-    .lis.about__content {
-    width:100%
+  .team {
+    height: 1088px;
   }
-  .about__content img {
-    display: none;
-  }-main{
-      fl.about__content {
-    width:100%
+  .social {
+    padding-top: 0;
   }
-  .about__content img {
-    display: none;
-  }x-direction: column;
-   .abou.about__content {
-    width:100%
+  .team__members{
+    flex-wrap: wrap;
   }
-  .about__content img {
-    display: none;
-  }__content {
-    widt.about__content {
-    width:100%
+  .member {
+    width: 220px;
+    height: 250px;
+    margin-bottom: 10px;
   }
-  .about__content img {
-    display: none;
-  }:100%
+  .member-img img {
+    width: 15vh;
+    height: 15vh;
   }
-  .about__content img {
+  .social i{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size:10px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .about__content img{
     display: none;
   }
-   .about__content {
-    width:100%
+  fieldset{
+    padding: 17vw;
+
   }
-  .about__content img {
-    display: none;
-  }main li {
-   .about__content {
-    width:100%
-  }
-  .about__content img {
-    display: none;
-  }in-left: 0;
-   .about__content {
-    width:100%
-  }
-  .about__content img {
-    display: none;
-  }-align: center;
-  }.about__content {
-    width:100%
-  }
-  .about__content img {
-    display: none;
+
+  .home__title h1{
+    font-size: 2rem;
   }
   
+  .home__title p{
+    font-size: .5rem;
+  }
+  
+  .list-main{
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+  .list-main li {
+    margin-left: 0;
+    text-align: center;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    height: 31vh;
+    width: 33.3vh;
+    }
+  .about__content {
+    width:100%
+  }
+  .content__info h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+   }
+}
+@media (max-width :999px) {
+  .about__content img{
+    display: none;
+    
+  }
+  .content__info p {
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+
+  }
+  fieldset{
+    padding: 0;
+  }
+  .img-after-about{
+    display: block;
+  }
+  #Contact-Us label input, .contact-us__select , textarea {
+    
+    width: 88vw;
+}
 }
