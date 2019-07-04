@@ -371,6 +371,9 @@ textarea{
   color: #384f66;
   font-size:20px;
 }
+.member__social i:hover{
+  background-color:rgb(248, 175, 66);
+}
 .member__social {
   margin-top: 10px;
 }
