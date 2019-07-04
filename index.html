@@ -108,14 +108,17 @@
         </section>
         <section id="Contact-Us" class="contact-us" hidden>
             <form action="" method="POST">
-                <fieldset>
-                    <legend>Contact Us</legend>
-                    
+              
+                <div class="forms-flex">
+                    <input type="text" aria-label="name" name="name" placeholder="name">
+                </div>
+                <div class="forms-flex">
+                    <input type="email" aria-label="email" name="email" placeholder="Email">
+                </div>
+                <div class="forms-flex">    
+                <input type="text" aria-label="phone" name="phoneNp" placeholder="Phone number">
+            </div>
                     <div class="forms-flex">
-                        <label><span class="input-label" >name</span><input type="text" name="name" placeholder="name"></label>
-                        <label><span class="input-label" >email</span><input type="email" name="email" placeholder="Email"></label>
-                        <label><span class="input-label" >phone number</span><input type="text" name="phoneNp" placeholder="Phone number"></label>
-                        <label>
                             <select class="contact-us__select">
                                 <option value="" disabled selected>Select the developers</option>
                                 <option value="All">All</option>
@@ -124,13 +127,13 @@
                                 <option value="Mohammed">Mohammed Al-hallaq</option>
                                 <option value="Imad">Imad Shatali</option>
                             </select>
-                            <br>
-                        </label>
-                        <textarea name="message" id="" cols="30" rows="8" placeholder="Write your message here:"></textarea>
+                    </div>
+                    <div class="forms-flex">                    
+                        <textarea name="message" id="" cols="30" rows="5" placeholder="Write your message here:"></textarea>
+                    </div>
+                    <div class="forms-flex">
                         <input class="contact-us--btn" type="submit">
                     </div>
-                    
-                </fieldset>
             </form>
         </section>
     </main>

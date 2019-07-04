@@ -48,39 +48,44 @@ body{
   display: block;
   margin-left: 1.3rem;
   font-family: sans-serif;
-  font-size: 1rem;
-}
-section#Contact-Us{
-    font-size: 1.2rem;
+  font-size: 0.7rem;
 }
 
-#Contact-Us label input{
-    margin: 1.1rem;
-    padding: 0.8rem;
-    border-radius: 7px;
-    margin-left: 1vw;
-    width: 90vw;
+section#Contact-Us{
+    /* font-size: 0rem; */
+}
+label{
+  width:90%;
+  margin: 0 auto;
+}
+
+#Contact-Us input{
+    margin: 0.4rem 4.8px;
+    padding: 0.9rem;
+    border-radius: .5rem;
+    width: 87vw;
+    border: 0.5px solid #e4ab7a;
 }
 section form{
-    margin: 0 auto;
+    margin: 20px auto;
 }
 textarea{
-    width:73vw;
+    width:90vw;
     padding: 0.4rem;
     margin-top: 1rem;
     margin: .5rem;
     padding: 0.8rem;
-    border-radius: 7px;
-    margin-left: 1vw;
-    width: 90vw;
+    border: 0.5px solid #e4ab7a;
+    border-radius: 32px;
+    width: 87.5vw;
+    padding: 0.9rem;
+    border-radius: .5rem;
     font-family: sans-serif;
 }
 .forms-flex{
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    width:90vw;
-    padding: 0vw;
+  width: 69.6%;
+  margin: 0 auto;
+  display: table;
 }
 .coatainer-border{
   width: 80vw;
@@ -88,10 +93,13 @@ textarea{
 }
 .contact-us__select{
     background: rgba(0,0,0,.2);
-    padding: 0.8rem;
-    border-radius: 7px;
-    margin-left: 1vw;
-    width: 90vw;
+    padding: 0.5rem;
+    border-radius: 13px;
+    padding: 0.9rem;
+    border-radius: .5rem;
+    /* margin-left: 1vw; */
+    border: 0.5px solid #e4ab7a;
+    width: 87.3vw;
 }
 .contact-us legend{
     text-align: left;
@@ -109,7 +117,7 @@ fieldset{
     font-weight: bold;
     margin: .5rem;
     border-radius: 7px;
-    margin-left: 1vw;
+    margin-left: 5.5vw;
     width: 90vw;
     padding: .5rem;
     box-sizing: border-box;
@@ -430,8 +438,8 @@ color: white;
   .img-after-about{
     display: block;
   }
-  #Contact-Us label input, .contact-us__select , textarea {
-    width: 79vw;
+  #Contact-Us input, .contact-us__select , textarea {
+    width: 64.2vw;
   }
 }
 /* end current */
