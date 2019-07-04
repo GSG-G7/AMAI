@@ -507,9 +507,9 @@ color: white;
    .about__container {
     width: 100%;
    }
-    .content__info {
-      width: 350px;
-    }
+    ..content__info {
+      width: 97%;
+  }
   
   .contact-us {
     height: 100vh;
