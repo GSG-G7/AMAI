@@ -16,17 +16,17 @@ logo.addEventListener('click', () => {
 })
 aboutBtn.addEventListener('click', () => {
     showSection(about);
-})
+});
 teamBtn.addEventListener('click', () => {
     showSection(team);
-})
+});
 contactBtn.addEventListener('click', () => {
     showSection(contact);
-})
+});
 
 callBtn.addEventListener('click', () => {
     showSection(contact);
-})
+});
 
 function showSection(section) {
     home.hidden = true;
