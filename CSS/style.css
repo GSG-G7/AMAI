@@ -111,6 +111,9 @@ fieldset{
   padding: 2vw;
   width:90vw;
 }
+.contact-us__select:hover{
+  background: #a7b0b97a;
+}
 .contact-us--btn{
     background: #202021ad;
     color: white;
@@ -122,9 +125,11 @@ fieldset{
     padding: .5rem;
     box-sizing: border-box;
     font-size: .8rem;
+    transition: .7s;
 }
 .contact-us--btn:hover{
-  background: #e67d2298;
+  background: #000000;
+  transform: scale(1.01);
 }
 /* Main Style ===================================================>*/
 
@@ -373,6 +378,9 @@ color: white;
   padding-top: 10px;
   color: #454548
 }
+.team h2:hover {
+  transform: scale(1.2);
+}
 
 .member {
   width: 258px;
@@ -383,6 +391,9 @@ color: white;
   box-shadow: -7px 5px 20px 0px #202021;
   background-color: #eaeaea;
 }
+.member:hover{
+  transform: scale(1.1) rotate(1deg);
+}
 .member__img img {
   width: 21vh;
   height: 20vh;
@@ -391,7 +402,9 @@ color: white;
   border-radius: 50%;
   margin-top: 17px;
 }
-
+.member__img img:hover {
+  transform: scale(1.1);
+}
 .member__social i{
   width: 40px;
   height: 40px;
