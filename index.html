@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <span class="logo">AMAI</span>
+            <span class="logo"><a>AMAI</a></span>
             <ul class="list-main">
                 <li><a id="home">Home</a></li>
                 <li><a id="about">About</a></li>
@@ -25,8 +25,8 @@
     </header>
     <main>
         <section class="home">
-            <div class="home__title ">
-                <h1>Welcome to <span>AMAI</span> </h1>
+            <div class="home__title">
+                <h1 class="home__title__h1">Welcome to <span>AMAI</span></h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis neque expedita fuga facilis. </p>
             </div>
 
@@ -40,8 +40,17 @@
                   <img src="images/about-img.jpg" alt="team-photo">
                     <div class="content__info">
                         <h3>About Amai team</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis aliquam illo cum. Vel, eum adipisci porro delectus quae fugit tenetur distinctio in, quaerat consequatur beatae! Ipsum odit
-                            labore repellendus? Maiores, Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea perspiciatis repellendus. Explicabo dolores, cum, id, fugit veniam placeat perferendis facere odit minima itaque cumque reiciendis dolore labore inventore! Obcaecati?</p>
+                        <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain 
+                            was born and I will give you a complete account of the system, and expound the actual teachings
+                             of the great explorer of the truth, the master-builder of human happiness. No one rejects, 
+                             dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not 
+                             know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                              Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
+                              because it is pain, but because occasionally circumstances occur in which toil and 
+                              pain can procure him some great pleasure. To take a trivial example, which of us ever
+                               undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to 
+                            find fault with a man who chooses to enjoy a pleasure that has no annoying consequences,
+                             or one who avoids a pain that produces no resultant pleasure?"</p>
                     </div>
                 </div>
             </div>
@@ -99,28 +108,32 @@
         </section>
         <section id="Contact-Us" class="contact-us" hidden>
             <form action="" method="POST">
-                <fieldset>
-                    <legend>Contact Us</legend>
+              
+                <div class="forms-flex">
+                    <input type="text" aria-label="name" name="name" placeholder="name">
+                </div>
+                <div class="forms-flex">
+                    <input type="email" aria-label="email" name="email" placeholder="Email">
+                </div>
+                <div class="forms-flex">    
+                <input type="text" aria-label="phone" name="phoneNp" placeholder="Phone number">
+            </div>
                     <div class="forms-flex">
-                        <label>Name<input type="text" name="name" placeholder="name"></label>
-                        <label>Email<input type="email" name="email" placeholder="Email"></label>
-                        <label>Phone<input type="text" name="phoneNp" placeholder="Phone number"></label>
-                        <label>
                             <select class="contact-us__select">
                                 <option value="" disabled selected>Select the developers</option>
                                 <option value="All">All</option>
                                 <option value="Asem">Asem AbuMsame7</option>
                                 <option value="Alaa">Alaa Taima</option>
-                                <option value="Mohammed">Mohammed Al-halaq</option>
+                                <option value="Mohammed">Mohammed Al-hallaq</option>
                                 <option value="Imad">Imad Shatali</option>
                             </select>
-                            <br>
-                        </label>
-                        <textarea name="message" cols="30" rows="5"
-                            placeholder="Write your message here:"></textarea>
-                        <br><input class="contact-us--btn" type="submit">
-                </fieldset>
-                </div>
+                    </div>
+                    <div class="forms-flex">                    
+                        <textarea name="message" id="" cols="30" rows="5" placeholder="Write your message here:"></textarea>
+                    </div>
+                    <div class="forms-flex">
+                        <input class="contact-us--btn" type="submit">
+                    </div>
             </form>
         </section>
     </main>

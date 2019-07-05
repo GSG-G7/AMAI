@@ -7,10 +7,13 @@ const aboutBtn = document.querySelector('nav a#about');
 const teamBtn = document.querySelector('nav a#team');
 const contactBtn = document.querySelector('nav a#contact-us');
 const callBtn = document.querySelector('.home__btn__call');
-
+const logo = document.querySelector(".logo");
 homeBtn.addEventListener('click', () => {
     showSection(home);
-});
+})
+logo.addEventListener('click', () => {
+    showSection(home);
+})
 aboutBtn.addEventListener('click', () => {
     showSection(about);
 });
